@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5c0c5;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    /* Navigation Bar Styling */
+    #nav-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000; /* Ensure the navigation bar is above other content */
+    }
+    .container {
+      text-align: center;
+      margin-top: 60px; /* Adjust according to the height of the navigation bar */
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    a {
+      color: #ffffff !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Include the navigation bar -->
+  <header id="nav-container">
+    <!-- Navigation bar will be inserted here -->
+  </header>
+
+  <!-- Add content specific to each page -->
+
+  <!-- JavaScript to load the navigation bar -->
+  <script>
+    // Fetch and insert the navigation bar
+    document.addEventListener("DOMContentLoaded", function() {
+      const navContainer = document.getElementById('nav-container');
+      fetch('https://jevans10.github.io/portfolio/navigation.html')
+        .then(response => response.text())
+        .then(html => {
+          navContainer.innerHTML = html;
+        });
+    });
+  </script>
+
+  <div class="container">
+    <h1>Coming Soon...</h1>
+    <p>Stay tuned for exciting updates!</p>
+    <br>
+    <br>
+    <br>
+    <p>In the meantime, <b><a href="https://jevans10.github.io/portfolio/Josephine Evans' Resume.pdf" download>download a copy of my resume</a></b></p>
+  </div>
+
+</body>
+</html>
