@@ -36,3 +36,7 @@ p {
 h1, h2, h3 {
   font-family: 'Menlo', monospace; /* Use Menlo for headings */
 }
+
+a{
+  text-decoration: none;
+}
