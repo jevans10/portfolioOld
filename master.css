@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Inter', serif; /* Use Inter for the body */
+  font-family: 'inter', sans-serif; /* Use Inter for the body */
   background-color: #fff;
   margin: 0;
   padding: 0;
@@ -39,4 +39,5 @@ h1, h2, h3 {
 
 a{
   text-decoration: none;
+  color: inherit;
 }
