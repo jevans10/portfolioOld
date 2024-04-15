@@ -16,7 +16,7 @@
     // Fetch and insert the navigation bar
     document.addEventListener("DOMContentLoaded", function() {
       const navContainer = document.getElementById('nav-container');
-      fetch('file:///Users/josephineevans/Downloads/navigation.html')
+      fetch('https://jevans10.github.io/portfolio/navigation.html')
         .then(response => response.text())
         .then(html => {
           navContainer.innerHTML = html;
