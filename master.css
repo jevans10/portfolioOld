@@ -1,3 +1,38 @@
-a {
-  color: #333;
+@font-face {
+  font-family: 'Inter';
+  src: url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+}
+
+@font-face {
+  font-family: 'Menlo';
+  src: url(https://jevans10.github.io/portfolio/fonts/menlo.ttc) format('truetype');
+}
+
+body {
+  font-family: 'Inter', serif; /* Use Inter for the body */
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Navigation Bar Styling */
+#nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the navigation bar is above other content */
+}
+
+p {
+  line-height: 35px;
+  font-size: 1.5em;
+}
+
+h1, h2, h3 {
+  font-family: 'Menlo', monospace; /* Use Menlo for headings */
 }
