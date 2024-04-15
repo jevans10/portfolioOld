@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Add meta tags, title, stylesheets, etc. -->
+</head>
+<body>
+  <!-- Include the navigation bar -->
+  <header id="nav-container">
+    <!-- Navigation bar will be inserted here -->
+  </header>
+
+  <!-- Add content specific to each page -->
+
+  <!-- JavaScript to load the navigation bar -->
+  <script>
+    // Fetch and insert the navigation bar
+    document.addEventListener("DOMContentLoaded", function() {
+      const navContainer = document.getElementById('nav-container');
+      fetch('file:///Users/josephineevans/Downloads/navigation.html')
+        .then(response => response.text())
+        .then(html => {
+          navContainer.innerHTML = html;
+        });
+    });
+  </script>
+</body>
+</html>
