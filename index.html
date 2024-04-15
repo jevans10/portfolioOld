@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title>
-  <link rel="stylesheet" href="https://jevans10/github.io/portfolio/master.css">
+  <link rel="stylesheet" href="https://jevans10.github.io/portfolio/master.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -28,31 +28,46 @@
     .container {
       text-align: center;
       margin-top: 60px; /* Adjust according to the height of the navigation bar */
+      display: flex;
+      align-items: flex-start; /* Align items to the top */
+
     }
+    .profile-pic {
+      overflow: hidden;
+      margin-right: 2rem; /* Adjust the right margin */
+      flex-shrink: 0; /* Prevent the image from shrinking */
+      width: 400px; /* Adjust the width of the image */
+    }
+    .profile-pic img {
+      width: 100%; /* Ensure the image fills its container */
+      height: auto; /* Ensure the aspect ratio is preserved */
+      object-fit: cover;
+    }
+    .text-section {
+      text-align: left;
+      margin-right: 0; /* Remove the margin */
+      width: calc(100% - 400px); /* Adjust width to occupy more space */
+    }
+    
+    p{
+      line-height: 35px;
+    }
+
     h1 {
       font-size: 2rem;
       margin-bottom: 1rem;
+      color: #FFF;
+
     }
     p {
       font-size: 1.2rem;
       margin-bottom: 1.5rem;
     }
-    .profile-pic {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      background-color: #ff6b6b;
-      overflow: hidden;
-      margin: 0 auto 2rem;
-    }
-    .profile-pic img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+
     a {
-      color: #ffffff !important;
+      color:#ffffff;
     }
+
   </style>
 </head>
 <body>
@@ -77,20 +92,17 @@
   </script>
 
   <div class="container">
+    <!-- Profile Picture -->
     <div class="profile-pic">
-      <img src="https://jevans10.github.io/portfolio/images/profile.png" alt="Profile Picture">
+      <img src="/Users/josephine/Downloads/506F4615-9041-4AB4-9F2A-9DE746994F4E_1_105_c.png" alt="Profile Picture">
     </div>
-    <h1>About Me</h1>
-    <p>Hello! I'm Josephine</p>
-    <br>
-    <p style="line-height: 30px;">I'm a driven individual deeply interested in product design, 
-      quality engineering, and technical support.
-       With a love for creating <b><i>user-centered designs</i></b> that are visually appealing, intuitive, and functional, 
-       I aim to deliver exceptional support and <b><i>drive continuous improvement</i></b> in product quality and reliability.</p>
-       <br>
-       <br>
-    <p>Feel free to <b><a href="https://jevans10.github.io/portfolio/portfolio.html">explore my portfolio</a></b>, <b><a href="https://jevans10.github.io/portfolio/Josephine Evans' Resume.pdf" download>download a copy of my resume</a></b> and <b><a href="mailto:contact@josephineevans.org">get in touch!</a></b></p>
+    <!-- Text Section -->
+    <div class="text-section">
+      <h1 style="text-transform: uppercase; line-height: 70px;">About Me</h1>
+      <p>Hello! I'm Josephine</p>
+      <p>I'm a driven individual deeply interested in product design, quality engineering, and technical support. With a love for creating <b><i>user-centered designs</i></b> that are visually appealing, intuitive, and functional, I aim to deliver exceptional support and <b><i>drive continuous improvement</i></b> in product quality and reliability.
+      Feel free to <b><a href="https://jevans10.github.io/portfolio/portfolio.html">explore my portfolio</a></b>, <b><a href="https://jevans10.github.io/portfolio/Josephine Evans' Resume.pdf" download>download a copy of my resume</a></b> and <b><a href="mailto:contact@josephineevans.org">get in touch!</a></b></p>
+    </div>
   </div>
-
 </body>
 </html>
