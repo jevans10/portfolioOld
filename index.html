@@ -12,8 +12,8 @@
 
   <!-- Add content specific to each page -->
 
-  <!-- JavaScript to load the navigation bar -->
   <script>
+    <!-- JavaScript to load the navigation bar -->
     // Fetch and insert the navigation bar
     document.addEventListener("DOMContentLoaded", function() {
       const navContainer = document.getElementById('nav-container');
@@ -23,6 +23,16 @@
           navContainer.innerHTML = html;
         });
     });
+
+    // Fetch and insert the head content
+    document.addEventListener("DOMContentLoaded", function() {
+      const headElement = document.querySelector('head');
+      fetch('https://jevans10.github.io/portfolio/head.html')
+        .then(response => response.text())
+        .then(html => {
+          headElement.innerHTML += html;
+      });
+  });
   </script>
 
   <div class="container">
