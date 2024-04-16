@@ -46,3 +46,8 @@ a{
   text-decoration: none;
   color: inherit;
 }
+
+.sacramento-font {
+  font-family: 'Sacramento', cursive;
+}
+
