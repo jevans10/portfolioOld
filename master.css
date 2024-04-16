@@ -8,6 +8,11 @@
   src: url(https://jevans10.github.io/portfolio/fonts/menlo.ttc) format('truetype');
 }
 
+@font-face {
+  font-family: 'Sacramento';
+  src: url(https://jevans10.github.io/portfolio/fonts/Sacramento-Regular.ttf) format('truetype');
+}
+
 body {
   font-family: 'inter', sans-serif; /* Use Inter for the body */
   background-color: #fff;
