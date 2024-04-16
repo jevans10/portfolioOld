@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Inter';
-  src: url(https://jevans10.github.io/portfolio/fonts/Inter-VariableFont_slnt,wght.ttf) format('truetype');
+  src: url(https://jevans10.github.io/portfolio/fonts/inter.ttf) format('truetype');
 }
 
 @font-face {
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'Sacramento';
-  src: url(https://jevans10.github.io/portfolio/fonts/Sacramento-Regular.ttf) format('truetype');
+  src: url(https://jevans10.github.io/portfolio/Fonts/sacramento.ttf) format('truetype');
 }
 
 body {
