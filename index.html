@@ -13,26 +13,25 @@
   <!-- Add content specific to each page -->
 
   <script>
-    <!-- JavaScript to load the navigation bar -->
-    // Fetch and insert the navigation bar
+    // JavaScript to load the navigation bar and head content
     document.addEventListener("DOMContentLoaded", function() {
       const navContainer = document.getElementById('nav-container');
+      const headElement = document.querySelector('head');
+
+      // Fetch and insert the navigation bar
       fetch('https://jevans10.github.io/portfolio/navigation.html')
         .then(response => response.text())
         .then(html => {
           navContainer.innerHTML = html;
         });
-    });
 
-    // Fetch and insert the head content
-    document.addEventListener("DOMContentLoaded", function() {
-      const headElement = document.querySelector('head');
+      // Fetch and insert the head content
       fetch('https://jevans10.github.io/portfolio/head.html')
         .then(response => response.text())
         .then(html => {
           headElement.innerHTML += html;
-      });
-  });
+        });
+    });
   </script>
 
   <div class="container">
