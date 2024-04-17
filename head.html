@@ -5,8 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josephine's Portfolio</title>
     <link rel="stylesheet" href="https://jevans10.github.io/portfolio/master.css">
-    <link rel="icon" type="image/x-icon" href="https://jevans10.github.io/portfolio/images/favicon/favicon.svg">
-    <!-- Favicon for Safari -->
-    <link rel="mask-icon" href="https://jevans10.github.io/portfolio/images/favicon/favicon.svg" color="#000">
+    <!-- Light mode favicon -->
+    <link rel="icon" type="image/x-icon" href="https://jevans10.github.io/portfolio/images/favicon/white-favicon.ico">
+    <!-- Dark mode favicon -->
+    <link rel="icon" type="image/x-icon" href="https://jevans10.github.io/portfolio/images/favicon/black-favicon.ico" id="dark-mode-favicon" media="(prefers-color-scheme: dark)">
+    <!-- Fallback favicon for browsers not supporting media queries -->
+    <link rel="icon" type="image/x-icon" href="https://jevans10.github.io/portfolio/images/favicon/pink-favicon.ico">
+    <!-- Favicon for Safari (Light mode) -->
+    <link rel="mask-icon" href="https://jevans10.github.io/portfolio/images/favicon/white-favicon.svg" color="#000">
+    <!-- Favicon for Safari (Dark mode) -->
+    <link rel="mask-icon" href="https://jevans10.github.io/portfolio/images/favicon/black-favicon.svg" color="#fff" id="dark-mode-safari-favicon" media="(prefers-color-scheme: dark)">
+    <script>
+        // Function to toggle between light and dark mode favicon
+        function toggleFavicon() {
+            const lightFavicon = document.querySelector('link[rel="icon"]:not([media])');
+            const darkModeFavicon = document.getElementById('dark-mode-favicon');
+            const darkModeSafariFavicon = document.getElementById('dark-mode-safari-favicon');
+
+            // Check if dark mode is enabled
+            const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            // Set the href attribute of the favicons based on the mode
+            if (isDarkMode) {
+                lightFavicon.setAttribute('media', '(prefers-color-scheme: light)');
+                darkModeFavicon.removeAttribute('media');
+                darkModeSafariFavicon.removeAttribute('media');
+            } else {
+                lightFavicon.removeAttribute('media');
+                darkModeFavicon.setAttribute('media', '(prefers-color-scheme: dark)');
+                darkModeSafariFavicon.setAttribute('media', '(prefers-color-scheme: dark)');
+            }
+        }
+
+        // Call the function initially and add event listener for changes in dark mode
+        toggleFavicon();
+        window.matchMedia('(prefers-color-scheme: dark)').addListener(toggleFavicon);
+    </script>
 </head>
 <body>
