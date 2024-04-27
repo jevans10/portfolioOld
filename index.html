@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--#include virtual="https://jevans10.github.io/portfolio/head.html" -->
+<!--#include virtual="http://jevans10.github.io/portfolio/head.html" -->
 <head>
   <title>About Me</title> <!-- Page-specific title -->
 </head>
@@ -19,14 +19,14 @@
       const headElement = document.querySelector('head');
 
       // Fetch and insert the navigation bar
-      fetch('https://jevans10.github.io/portfolio/navigation.html')
+      fetch('http://jevans10.github.io/portfolio/navigation.html')
         .then(response => response.text())
         .then(html => {
           navContainer.innerHTML = html;
         });
 
       // Fetch and insert the head content
-      fetch('https://jevans10.github.io/portfolio/head.html')
+      fetch('http://jevans10.github.io/portfolio/head.html')
         .then(response => response.text())
         .then(html => {
           headElement.innerHTML += html;
@@ -37,7 +37,7 @@
 <div class="container">
     <!-- Profile Picture -->
     <div class="profile-pic">
-      <img src="https://jevans10.github.io/portfolio/images/profile.png" alt="Profile Picture">
+      <img src="http://jevans10.github.io/portfolio/images/profile.png" alt="Profile Picture">
     </div>
     <!-- Text Section -->
     <div class="text-section">
