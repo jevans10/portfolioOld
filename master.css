@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'Inter';
-  src: fonts/inter.ttf format('truetype');
+  src: url("../fonts/inter.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'Menlo';
-  src: fonts/menlo.ttc format('truetype');
+  src: url("../fonts/menlo.ttc") format('truetype');
 }
 
 @font-face {
   font-family: 'Sacramento';
-  src: fonts/sacramento.ttf format('truetype');
+  src: url("../fonts/sacramento.ttf") format('truetype');
 }
 
 body {
