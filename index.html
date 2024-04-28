@@ -1,4 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--#include virtual="head.html" -->
+<head>
+  <title>About Me</title> <!-- Page-specific title -->
+</head>
+<body>
+  <!-- Include the navigation bar -->
+  <header id="nav-container">
+    <!-- Navigation bar will be inserted here -->
+  </header>
 
+  <!-- Add content specific to each page -->
+
+  <script>
+    // JavaScript to load the navigation bar and head content
+    document.addEventListener("DOMContentLoaded", function() {
+      const navContainer = document.getElementById('nav-container');
+      const headElement = document.querySelector('head');
+
+      // Fetch and insert the navigation bar
+      fetch('navigation.html')
+        .then(response => response.text())
+        .then(html => {
+          navContainer.innerHTML = html;
+        });
+
+      // Fetch and insert the head content
+      fetch('head.html')
+        .then(response => response.text())
+        .then(html => {
+          headElement.innerHTML += html;
+        });
+    });
+  </script>
+
+<div class="container">
+    <!-- Profile Picture -->
+    <div class="profile-pic">
+      <img src="images/profile.png" alt="Profile Picture">
+    </div>
+    <!-- Text Section -->
+    <div class="text-section">
+      <h1 style="text-transform: uppercase; line-height: 35px;">About Me</h1>
+      <p style="line-height: 30px; margin-bottom: 20px;">Hello! I'm <span class="sacramento-font" style="font-size:42px">josephine</span></p>
+      <p>As a passionate advocate for user-centered design and product excellence, I draw on my background in quality engineering, failure analysis, and product design. By combining usability studies with data analysis, I address quality issues and iterate through design changes, ensuring products meet stringent standards. Collaborating with diverse teams, I have used my skills to conduct lab experiments, enhancing product quality and reliability. My dedication to crafting visually appealing, intuitive, and functional designs reflects my commitment to delivering exceptional support and enhancing product excellence.</p>
+          <p>Feel free to <a href="index.html#portfolio"><i style="text-decoration:underline">explore my portfolio</i></a>, 
+          <a href="Josephine Evans' Resume.pdf" download><i style="text-decoration:underline">download a copy of my resume</i></a>
+          and <a href="mailto:contact@josephineevans.org"><i style="text-decoration:underline">get in touch!</i></a></p>
+    </div>
+  </div>
+
+  <!-- Page-specific CSS -->
+  <style>
     body {
       color: #411900;
       margin: 0;
@@ -25,9 +78,9 @@
     }
     .profile-pic {
       overflow: hidden;
-      margin-top: 10rem;
-      margin-left:-10rem;
-      padding-right: 10rem; /* Adjust the right margin */
+      margin-top: 6rem;
+      margin-left:-15rem;
+      padding-right: 2rem; /* Adjust the right margin */
       flex-shrink: 0; /* Prevent the image from shrinking */
       width: 400px; /* Adjust the width of the image */
     }
@@ -39,8 +92,8 @@
     .text-section {
       text-align: left;
       margin-top: 6rem;
-      margin-right: -200px; /* Remove the margin */
-      width: calc(100% - 100px); /* Adjust width to occupy more space */
+      margin-right: -300px; /* Remove the margin */
+      /*! width: calc(100% - 100px); */ /* Adjust width to occupy more space */
       
     p {
       line-height: 35px;
@@ -55,4 +108,6 @@
     .index-links {
       color: rgb(243, 182, 196);
     }
-  
+  </style>
+</body>
+</html>
