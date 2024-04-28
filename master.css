@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'Sacramento';
-  src: url("../fonts/sacramento.ttf") format('truetype');
+  src: url("http://josephineevans.org/fonts/sacramento.ttf") format('truetype');
 }
 
 body {
