@@ -6,12 +6,6 @@
   <title>Coming Soon</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #FFF;
-      color: #411900;
-      margin: 0;
-      padding: 0;
-      display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
@@ -43,22 +37,30 @@
   </style>
 </head>
 <body>
-  <!-- Include the navigation bar -->
   <header id="nav-container">
     <!-- Navigation bar will be inserted here -->
   </header>
 
   <!-- Add content specific to each page -->
 
-  <!-- JavaScript to load the navigation bar -->
   <script>
-    // Fetch and insert the navigation bar
+    // JavaScript to load the navigation bar and head content
     document.addEventListener("DOMContentLoaded", function() {
       const navContainer = document.getElementById('nav-container');
-      fetch('https://jevans10.github.io/portfolio/navigation.html')
+      const headElement = document.querySelector('head');
+
+      // Fetch and insert the navigation bar
+      fetch('navigation.html')
         .then(response => response.text())
         .then(html => {
           navContainer.innerHTML = html;
+        });
+
+      // Fetch and insert the head content
+      fetch('head.html')
+        .then(response => response.text())
+        .then(html => {
+          headElement.innerHTML += html;
         });
     });
   </script>
