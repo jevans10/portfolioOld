@@ -40,7 +40,7 @@ p {
 
 h1, h2, h3 {
   font-family: 'Menlo', monospace; /* Use Menlo for headings */
-  text-transform: Uppercase;
+  text-transform: uppercase;
 
 }
 
