@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'Inter';
-  src: url(https://jevans10.github.io/portfolio/fonts/inter.ttf) format('truetype');
+  src: url(fonts/inter.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Menlo';
-  src: url(https://jevans10.github.io/portfolio/fonts/menlo.ttc) format('truetype');
+  src: url(fonts/menlo.ttc) format('truetype');
 }
 
 @font-face {
   font-family: 'Sacramento';
-  src: url(https://jevans10.github.io/portfolio/Fonts/sacramento.ttf) format('truetype');
+  src: url(fonts/sacramento.ttf) format('truetype');
 }
 
 body {
   font-family: 'inter', sans-serif; /* Use Inter for the body */
-  background-color: #C6BFB7;
+  background-color: #DCDBD6;
   margin: 0;
   padding: 0;
   display: flex;
