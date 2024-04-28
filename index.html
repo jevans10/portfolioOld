@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title> <!-- Page-specific title -->
-  <link rel="stylesheet" href="https://jevans10.github.io/portfolio/master.css">
-  <link rel="icon" type="image/x-icon" href="https://jevans10.github.io/portfolio/images/favicon/white-favicon.ico">
-  <link rel="mask-icon" href="https://jevans10.github.io/portfolio/images/favicon/white-favicon.svg" color="#000">
 </head>
 <body>
-  <!-- Include the navigation bar -->
   <header id="nav-container">
     <!-- Navigation bar will be inserted here -->
   </header>
 
   <!-- Add content specific to each page -->
 
-  <div class="container">
+  <script>
+    // JavaScript to load the navigation bar and head content
+    document.addEventListener("DOMContentLoaded", function() {
+      const navContainer = document.getElementById('nav-container');
+      const headElement = document.querySelector('head');
+
+      // Fetch and insert the navigation bar
+      fetch('navigation.html')
+        .then(response => response.text())
+        .then(html => {
+          navContainer.innerHTML = html;
+        });
+
+      // Fetch and insert the head content
+      fetch('head.html')
+        .then(response => response.text())
+        .then(html => {
+          headElement.innerHTML += html;
+        });
+    });
+  </script>
+
+<div class="container">
     <!-- Profile Picture -->
     <div class="profile-pic">
       <img src="images/profile.png" alt="Profile Picture">
     </div>
     <!-- Text Section -->
     <div class="text-section">
-      <h1>About Me</h1>
-      <p>Hello! I'm <span class="sacramento-font">josephine</span></p>
+      <h1 style="text-transform: uppercase; line-height: 35px;">About Me</h1>
+      <p style="line-height: 30px; margin-bottom: 20px;">Hello! I'm <span class="sacramento-font" style="font-size:42px">josephine</span></p>
       <p>As a passionate advocate for user-centered design and product excellence, I draw on my background in quality engineering, failure analysis, and product design. By combining usability studies with data analysis, I address quality issues and iterate through design changes, ensuring products meet stringent standards. Collaborating with diverse teams, I have used my skills to conduct lab experiments, enhancing product quality and reliability. My dedication to crafting visually appealing, intuitive, and functional designs reflects my commitment to delivering exceptional support and enhancing product excellence.</p>
-      <p>Feel free to <a href="index.html#portfolio">explore my portfolio</a>, <a href="Josephine Evans' Resume.pdf" download>download a copy of my resume</a>, and <a href="mailto:contact@josephineevans.org">get in touch!</a></p>
+          <p>Feel free to <a href="index.html#portfolio"><i style="text-decoration:underline">explore my portfolio</i></a>, 
+          <a href="Josephine Evans' Resume.pdf" download><i style="text-decoration:underline">download a copy of my resume</i></a>
+          and <a href="mailto:contact@josephineevans.org"><i style="text-decoration:underline">get in touch!</i></a></p>
     </div>
   </div>
 
@@ -52,6 +70,7 @@
       text-align: center;
       margin-left: auto;
       align-content: center;
+    
       display: flex;
       align-items: flex-start; /* Align items to the top */
     }
@@ -72,7 +91,8 @@
       text-align: left;
       margin-top: 6rem;
       margin-right: -300px; /* Remove the margin */
-    }
+      /*! width: calc(100% - 100px); */ /* Adjust width to occupy more space */
+      
     p {
       line-height: 35px;
       font-size: 1.2rem;
@@ -81,12 +101,11 @@
     h1 {
       font-size: 2rem;
       margin-bottom: 1rem;
-      text-transform: uppercase;
     }
-    a {
-      text-decoration: underline;
+      
+    .index-links {
+      color: rgb(243, 182, 196);
     }
   </style>
-  <script src="favicon-toggle.js" defer></script>
 </body>
 </html>
