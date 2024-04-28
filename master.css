@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'Inter';
-  src: url("../fonts/inter.ttf") format('truetype');
+  src:  local("../fonts/inter.ttf") format('truetype');
 }
 
 @font-face {
   font-family: 'Menlo';
-  src: url("../fonts/menlo.ttc") format('truetype');
+  src: local("../fonts/menlo.ttc") format('truetype');
 }
 
 @font-face {
   font-family: 'Sacramento';
-  src: url("http://josephineevans.org/fonts/sacramento.ttf") format('truetype');
+  src:  local("../fonts/sacramento.ttf") format('truetype');
 }
 
 body {
