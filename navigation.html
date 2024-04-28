@@ -5,91 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Josephine's Portfolio</title>
   <!--#include virtual="jevans10.github.io/portfolio/head.html" -->
-  <style>
-
-/* Reset default margin and padding */
-body, h1, p {
-  margin: 0;
-  padding: 0;
-}
-
-/* Center content */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Style for navigation bar */
-nav {
-  background: #2f3841; /* Dark Blue Nav bar */
-  padding: 0px;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 1rem;
-}
-
-nav a {
-  text-transform: uppercase;
-  padding: 0.03125rem 1rem; /* Adjusted padding */
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  display: inline-flex; /* Use flexbox */
-  align-items: center; /* Center vertically */
-  font-size: 16px; /* Adjusted font size */
-  color: #B8B5AC;
-}
-
-nav a:hover {
-  background-color: #747777;
-}
-
-.class {
-  vertical-align: top; /* Align vertically in the middle */
-  margin-bottom: 5px; /* Adjust the vertical position slightly */
-}
-
-/* Media query for mobile devices */
-@media only screen and (max-width: 600px) {
-  nav {
-    padding: 5px;
-  }
-  
-  nav a {
-    padding: 10px 6px; /* Adjusted padding */
-    font-size: 14px;
-  }
-}
-
-.resume-link {
-  margin-left: 5px; /* Add some space between text and image */
-}
-
-  </style>
+  <link rel="stylesheet" href="styles.css"> <!-- External stylesheet -->
 </head>
 <body>
   
   <nav>
     <ul>
-      <li><a href="index.html"><H3>About</H3></a></li>
-      <li><a href="index.html#portfolio"><H3>Portfolio</H3></a></li>
+      <li><a href="index.html">About</a></li>
+      <li><a href="index.html#portfolio">Portfolio</a></li>
       <li>
         <a href="Josephine Evans' Resume.pdf" download>
-          <H3>Resume</H3>
-          <img class="resume-link" src="/images/download-icon.png" width="15">
+          Resume <img class="resume-link" src="/images/download-icon.png" width="15">
         </a>
       </li>
-      <li><a href="mailto:contact@josephineevans.org"><H3>Contact</H3></a></li>
+      <li><a href="mailto:contact@josephineevans.org">Contact</a></li>
     </ul>
   </nav>
+
+  <div class="container">
+    <!-- Content goes here -->
+  </div>
+
 </body>
 </html>
