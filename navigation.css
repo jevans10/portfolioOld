@@ -16,12 +16,13 @@ body, h1, p {
     background: #2f3841; /* Dark Blue Nav bar */
     padding: 0px;
     text-align: center;
+    font-family: 'menlo', monospace; /* Use menlo for the nav */
   }
   
   nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 10px;
   }
   
   nav li {
