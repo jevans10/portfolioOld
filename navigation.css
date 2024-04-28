@@ -37,7 +37,7 @@ body, h1, p {
     transition: background-color 0.3s ease;
     display: inline-flex; /* Use flexbox */
     align-items: center; /* Center vertically */
-    font-size: 16px; /* Adjusted font size */
+    font-size: 24px; /* Adjusted font size */
     color: #B8B5AC;
   }
   
